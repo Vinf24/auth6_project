@@ -171,3 +171,31 @@ respuesta esperada:
   }
 }
 ```
+
+---
+
+## Conexión a la base de datos (MySQL)
+
+El proyecto utiliza MySQL como base de datos, levantada mediante Docker.
+
+### Configuración en Docker
+
+El servicio de base de datos expone el puerto:
+
+- Host: `localhost`
+- Puerto: `3307` (mapeado desde el contenedor)
+- Base de datos: (definida en docker-compose)
+- Usuario: (definido en docker-compose)
+- Password: (definido en docker-compose)
+
+---
+
+**Datos de conexión:**
+
+- Host: `localhost`
+- Port: `3307`
+- User: `root` (o el definido en tu docker-compose)
+- Password: (la definida en docker-compose)
+- Database: (nombre de la base de datos)
+
+---
