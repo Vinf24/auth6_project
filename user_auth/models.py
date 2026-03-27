@@ -33,6 +33,7 @@ class CustomUserManager(BaseUserManager):
         return self.create_user(email, password, **extra_fields)
 
 class CustomUser(AbstractUser):
+    username = None
     id = models.BigAutoField(primary_key=True)
     names = models.CharField(max_length=30)
     lastnames = models.CharField(max_length=30)
@@ -48,7 +49,7 @@ class CustomUser(AbstractUser):
     objects = CustomUserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', 'names', 'lastnames']
+    REQUIRED_FIELDS = ['names', 'lastnames']
 
     class Meta:
         db_table = 'app_user'

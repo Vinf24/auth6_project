@@ -1,0 +1,45 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Tipos */
+
+.alert-success {
+    border-top: 5px solid #28a745;
+}
+
+.alert-error {
+    border-top: 5px solid #dc3545;
+}
+
+.alert-warning {
+    border-top: 5px solid #ffc107;
+}
+
+.alert-info {
+    border-top: 5px solid #17a2b8;
+}
